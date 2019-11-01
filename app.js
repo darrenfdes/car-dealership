@@ -27,6 +27,7 @@ var addvehicleRouter = require('./routes/addvehicle');
 var loginRouter = require('./routes/login');
 var processRouter = require('./routes/process');
 var dummy=require('./routes/dummy');
+var checkinventory = require('./routes/checkinventory');
 var app = express();
 
 // view engine setup
