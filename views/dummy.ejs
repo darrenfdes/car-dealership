@@ -1,0 +1,33 @@
+<html>
+<%if(result.length>0){%>
+<%for(let r of result){%>
+<div style="border:solid 1px black">
+	<p><%=r%></p>
+<p>Customer id:<%=r.cid%>
+<br>Customer name:<%=r.cname%>
+<br>Customer phone:<%=r.cphone%>
+<br>Customer address:<%=r.caddress%></p>
+</div>
+<%}%>
+<%}%>
+<div style="border:solid 1px black">
+<p>Customer id:<%=result[1].cid%>
+<br>Customer name:<%=result[1].cname%>
+<br>Customer phone:<%=result[1].cphone%>
+<br>Customer address:<%=result[1].caddress%></p>
+</div>
+<div style="border:solid 1px black">
+<p>Customer id:<%=result[2].cid%>
+<br>Customer name:<%=result[2].cname%>
+<br>Customer phone:<%=result[2].cphone%>
+<br>Customer address:<%=result[2].caddress%></p>
+</div>
+<footer style =" position: absolute;" style="bottom: 0">
+	<p style="font-size: 20px" >&copy; 2019 Goa Motors LLP</p>
+  <p>Contact information:
+  <a href="mailto:goamotors@gmail.com">
+ <br> Email: goamotors@gmail.com</a>
+    <br><a href="tel:6481234674">
+              Mobile:+91 6481234674 </a> </p>
+</footer>
+</html>

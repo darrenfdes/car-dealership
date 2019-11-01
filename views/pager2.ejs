@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Goa Motors</title>
+    <div class="tophead" style="background-color: black">
+            <h4>Goa Motors</h4>
+            <h1 >Database Management System</h1>
+        </div>
+ </head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styler.css">
+
+
+<body style="background-image:linear-gradient(#000428,#004e92)">
+  
+        <div class="options">
+        	<div class="zoom">
+             <h3>  <a onclick="window.location.href='/addcustomer' ">Add customer</a> </h3><br>
+             <p> the details of new customer</p>
+             <p>to be entered to the database</p>
+           </div>
+        <div class="zoom">
+           <h3>  <a onclick="window.location.href='/dummy' ">Get Customer Details</a></h3><br>
+            <p>Display existing</p>
+            <p>customer details</p>
+          </div>
+      <div class="zoom">
+            <h3><a href="#">Check Inventory</a></h3><br>
+            <p>Get details</p>
+            <p>of cars available at dealership</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p style="font-size: 20px" >&copy; 2019 Goa Motors LLP</p>
+  <p>Contact information:
+  <a href="mailto:goamotors@gmail.com">
+ <br> Email: goamotors@gmail.com</a>
+    <br><a href="tel:6481234674">
+              Mobile:+91 6481234674 </a> </p>
+    </footer>
+</body>
+</html>
+
+
+<style>
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 19px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+
+
+
+}
+.ip1
+{
+    display: inline-block;
+}
+}</style>
+
+<body>
+
+
+<button class="open-button" onclick="openForm()">Add Customer</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Add Customer</h1>
+
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter name" name = "name" required class="ip1"><br>
+        <label for="address">Address</label>
+        <input type="text" placeholder="Enter address" name="address" required class="ip1"><br>
+        <label for="email">Email</label>
+        <input type="text" placeholder="Enter email" name="email" required class="ip1"><br>
+        <label for="phone">Phone number</label>
+        <input type="text" placeholder="Enter phone" name="phone" required class="ip1"><br>
+    
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>

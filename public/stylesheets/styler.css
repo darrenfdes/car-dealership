@@ -1,0 +1,50 @@
+.tophead{
+  text-align: center;
+  font-size: 25px;
+  font-family:"Rockwell",cursive,sans-serif;
+  -webkit-text-fill-color:white;
+  padding-top: 0%
+  height:5px;
+  background-color: black;
+}
+
+.zoom{
+    margin :40px;
+    padding: 20px;
+    -webkit-box-flex:1;
+    border:solid 1px black;
+    display: inline-block;
+    background-color: lightseagreen;
+    border-radius: 25px;
+}
+
+.zoom:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+a{
+  color: black;
+}
+
+.options{
+	margin-left: 15%;
+}
+
+
+footer{
+    position:relative;
+    float: left;
+    width: 91.5%;
+    min-width: 825px;
+    height: 120px;
+    text-align: center;
+    font-style: bold;
+    z-index: 1;
+    background-repeat:repeat-x;
+    margin-left:3.7%;
+    margin-right:3.7%;
+    padding-left:0.5%;
+    padding-right:0.5%;
+}
