@@ -47,6 +47,7 @@ app.use('/addvehicle',addvehicleRouter);
 // app.use('/login', loginRouter);
 app.use('/process', processRouter);
 app.use('/dummy',dummy);
+app.use('/checkinventory',checkinventory);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
