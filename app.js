@@ -23,6 +23,7 @@ con.connect(function(err)
 var indexRouter = require('./routes/index');
 var pager2Router = require('./routes/pager2');
 var addcustomerRouter = require('./routes/addcustomer');
+var addvehicleRouter = require('./routes/addvehicle');
 var loginRouter = require('./routes/login');
 var processRouter = require('./routes/process');
 var dummy=require('./routes/dummy');
@@ -41,6 +42,7 @@ app.use(express.static(__dirname + '/public'));
 app.use('/', loginRouter);
 app.use('/pager2', pager2Router);
 app.use('/addcustomer', addcustomerRouter);
+app.use('/addvehicle',addvehicleRouter);
 // app.use('/login', loginRouter);
 app.use('/process', processRouter);
 app.use('/dummy',dummy);
